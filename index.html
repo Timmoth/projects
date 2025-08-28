@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0d0d0d] text-[#c0ffee]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 flex flex-col items-center font-mono">
+
+  <h1 class="text-xl mb-4 text-center drop-shadow-[0_0_6px_#c0ffee]">Demos</h1>
+
+  <!-- Controls -->
+  <div class="flex flex-col sm:flex-row gap-3 mb-6 w-full max-w-xl justify-between">
+    <!-- Search -->
+    <input 
+      id="filter"
+      type="text" 
+      placeholder="Filter projects..."
+      class="bg-[#1a1a1a] border border-[#c0ffee] text-[#c0ffee] px-2 py-1 rounded w-full sm:w-1/2 placeholder-[#88bbbb] focus:outline-none focus:border-[#0ff]"
+    >
+
+    <!-- Sort -->
+    <label class="flex items-center gap-2 text-sm">
+      Sort by:
+      <select 
+        id="sort" 
+        class="bg-[#1a1a1a] border border-[#c0ffee] text-[#c0ffee] px-2 py-1 rounded focus:outline-none focus:border-[#0ff]"
+      >
+        <option value="modified_at">Last Modified</option>
+        <option value="name">Name</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- Projects -->
+  <ul id="projects" class="w-full max-w-xl flex flex-col gap-4"></ul>
+
+  <script>
+    let allProjects = [];
+
+    async function loadProjects() {
+      const res = await fetch('projects.json');
+      allProjects = await res.json();
+      renderProjects(sortProjects(allProjects, 'modified_at'));
+    }
+
+    function renderProjects(projects) {
+      const container = document.getElementById('projects');
+      container.innerHTML = '';
+      projects.forEach(p => {
+        const li = document.createElement('li');
+        li.className = "border border-[#0ff] rounded p-3 hover:bg-[#111] transition";
+        li.innerHTML = `
+          <a href="${p.url}" class="block">
+            <div class="text-sm text-[#88bbbb]">[${formatDate(p.created_at)}]</div>
+            <div class="font-bold">${p.name}</div>
+            <div class="text-xs text-[#88bbbb] mt-1">${p.description || ''}</div>
+          </a>
+        `;
+        container.appendChild(li);
+      });
+    }
+
+    function formatDate(unix_seconds) {
+      const options = { month: 'short', year: 'numeric' };
+      const date = new Date(unix_seconds * 1000);
+      return date.toLocaleDateString(undefined, options);
+    }
+
+    function sortProjects(projects, method) {
+      const sorted = [...projects];
+      if (method === 'name') {
+        sorted.sort((a,b) => a.name.localeCompare(b.name));
+      } else if (method === 'modified_at') {
+        sorted.sort((a,b) => new Date(b.modified_at) - new Date(a.modified_at));
+      } else if (method === 'tags') {
+        sorted.sort((a,b) => (a.tags[0] || '').localeCompare(b.tags[0] || ''));
+      }
+      return sorted;
+    }
+
+    function filterProjects(query) {
+      query = query.toLowerCase();
+      return allProjects.filter(p => 
+        p.name.toLowerCase().includes(query) ||
+        (p.description && p.description.toLowerCase().includes(query)) ||
+        p.tags.some(tag => tag.toLowerCase().includes(query))
+      );
+    }
+
+    // Events
+    document.getElementById('sort').addEventListener('change', e => {
+      const sorted = sortProjects(filterProjects(document.getElementById('filter').value), e.target.value);
+      renderProjects(sorted);
+    });
+
+    document.getElementById('filter').addEventListener('input', e => {
+      const filtered = filterProjects(e.target.value);
+      const sorted = sortProjects(filtered, document.getElementById('sort').value);
+      renderProjects(sorted);
+    });
+
+    // Initial load
+    loadProjects();
+  </script>
+
+</body>
+</html>

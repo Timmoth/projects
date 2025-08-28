@@ -1,0 +1,20 @@
+[
+    {
+        "name": "realtime path tracing",
+        "description": "Real-time WebGl / Wasm path tracer demo showcasing reflective spheres, physics collisions, and dynamic shadows.",
+        "created_at": 1756400239,
+        "modified_at": 1756400239,
+        "url": "./demos/realtime_path_tracing/index.html",
+        "repo": "",
+        "tags": ["graphics", "webgl", "opengl", "C#", "dotnet", "wasm"]
+    },
+        {
+        "name": "chip-8 emulator",
+        "description": "Wasm CHIP-8 emulator with 4K memory, 16 registers, timers, and 64×32 display running in-browser.",
+        "created_at": 1755964812,
+        "modified_at": 1756224012,
+        "url": "https://emuchip.com",
+        "repo": "https://github.com/Timmoth/EmuChip",
+        "tags": ["emulator", "assembly", "C#", "dotnet", "wasm"]
+    }
+]
