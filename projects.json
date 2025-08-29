@@ -16,5 +16,14 @@
         "url": "https://emuchip.com",
         "repo": "https://github.com/Timmoth/EmuChip",
         "tags": ["emulator", "assembly", "C#", "dotnet", "wasm"]
+    },
+    {
+        "name": "Mandelbrot Viewer",
+        "description": "Interactive Mandelbrot fractal renderer using WebAssembly and WebGL, featuring dynamic animated coloring and smooth zooming.",
+        "created_at": 1756455399,
+        "modified_at": 1756455399,
+        "url": "./demos/mandelbrot_viewer/index.html",
+        "repo": "",
+        "tags": ["graphics", "webgl", "opengl", "C#", "dotnet", "wasm"]
     }
 ]
