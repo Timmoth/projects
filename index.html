@@ -12,15 +12,12 @@
 
   <!-- Controls -->
   <div class="flex flex-col sm:flex-row gap-3 mb-6 w-full max-w-xl justify-between">
-    <!-- Search -->
     <input 
       id="filter"
       type="text" 
       placeholder="Filter projects..."
       class="bg-[#1a1a1a] border border-[#c0ffee] text-[#c0ffee] px-2 py-1 rounded w-full sm:w-1/2 placeholder-[#88bbbb] focus:outline-none focus:border-[#0ff]"
     >
-
-    <!-- Sort -->
     <label class="flex items-center gap-2 text-sm">
       Sort by:
       <select 
@@ -89,7 +86,6 @@
       );
     }
 
-    // Events
     document.getElementById('sort').addEventListener('change', e => {
       const sorted = sortProjects(filterProjects(document.getElementById('filter').value), e.target.value);
       renderProjects(sorted);
@@ -101,9 +97,18 @@
       renderProjects(sorted);
     });
 
-    // Initial load
     loadProjects();
   </script>
+
+  <div class="mt-8 text-center text-sm text-[#88bbbb]">
+
+    Source code for projects     <a href="https://github.com/timmoth" target="_blank" class="text-[#0ff] hover:underline">
+      found on GitHub
+    </a> made by 
+    <a href="https://www.linkedin.com/in/timmoth/" target="_blank" class="text-[#0ff] hover:underline">
+      Tim Jones
+    </a>
+  </div>
 
 </body>
 </html>
