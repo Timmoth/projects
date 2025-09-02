@@ -1,4 +1,15 @@
 [
+{
+  "name": "infinite cubes ray marching",
+  "description": "Real-time WebGL / Wasm demo showcasing an infinite lattice of ray-marched cubes inspired by interstellar visuals.",
+  "created_at": 1756842804,
+  "modified_at": 1756842804,
+  "url": "./demos/ray_marching_infinite_cubes/index.html",
+  "repo": "",
+  "tags": ["graphics", "raymarching", "webgl", "opengl", "shaders", "wasm", "dotnet"]
+},
+
+    
     {
         "name": "realtime path tracing",
         "description": "Real-time WebGl / Wasm path tracer demo showcasing reflective spheres, physics collisions, and dynamic shadows.",
@@ -18,7 +29,7 @@
         "tags": ["emulator", "assembly", "C#", "dotnet", "wasm"]
     },
     {
-        "name": "Mandelbrot Viewer",
+        "name": "mandelbrot viewer",
         "description": "Interactive Mandelbrot fractal renderer using WebAssembly and WebGL, featuring dynamic animated coloring and smooth zooming.",
         "created_at": 1756455399,
         "modified_at": 1756455399,

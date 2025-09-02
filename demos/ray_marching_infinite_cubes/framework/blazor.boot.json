@@ -1,0 +1,45 @@
+{
+  "mainAssemblyName": "realtime_path_tracing_demo",
+  "resources": {
+    "hash": "sha256-uaIRxMkEwYkZRNrK6+u5cQPrKq1zNo7BpwSyrM349hI=",
+    "fingerprinting": {
+      "Silk.NET.Core.jzhbblocph.wasm": "Silk.NET.Core.wasm",
+      "Silk.NET.OpenGLES.ulk1oavryv.wasm": "Silk.NET.OpenGLES.wasm",
+      "System.Collections.Concurrent.nscd2g3yyy.wasm": "System.Collections.Concurrent.wasm",
+      "System.Console.7fp0d49q0h.wasm": "System.Console.wasm",
+      "System.Private.Uri.qqxuia3e81.wasm": "System.Private.Uri.wasm",
+      "System.Runtime.InteropServices.JavaScript.iyxc2d7sn7.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
+      "System.Private.CoreLib.1623vl81yc.wasm": "System.Private.CoreLib.wasm",
+      "realtime_path_tracing_demo.mj3yxn6y3j.wasm": "realtime_path_tracing_demo.wasm",
+      "dotnet.native.tvpwk5mr9i.js": "dotnet.native.js",
+      "dotnet.native.48i35iu6bz.wasm": "dotnet.native.wasm",
+      "dotnet.js": "dotnet.js",
+      "dotnet.runtime.ew19f13umk.js": "dotnet.runtime.js"
+    },
+    "jsModuleNative": {
+      "dotnet.native.tvpwk5mr9i.js": "sha256-CTNKbKsLdWBt9Xc2wXdcu7ElJKJeWOmCOvxFOinA9p0="
+    },
+    "jsModuleRuntime": {
+      "dotnet.runtime.ew19f13umk.js": "sha256-Isv/63htfX73xgn3/2cZMtk4S8xBcbmlXRgJMDv4mhI="
+    },
+    "wasmNative": {
+      "dotnet.native.48i35iu6bz.wasm": "sha256-/HNt7bxcVBzRKcOWDhiQ2x5gXpYYsZ6zCBDSSGHsnsw="
+    },
+    "coreAssembly": {
+      "System.Runtime.InteropServices.JavaScript.iyxc2d7sn7.wasm": "sha256-6jyyPAGwxbkcp6hipyP3vhQjMulKwVLPG55FKzOmarc=",
+      "System.Private.CoreLib.1623vl81yc.wasm": "sha256-ueBkAXyrwokdPQJ4JlvyWeLrCxMy8LbAiHxvpcV1aIA="
+    },
+    "assembly": {
+      "Silk.NET.Core.jzhbblocph.wasm": "sha256-MfE8gOFRnQXUDb7jkr0x9seZq6JsmwTD90Al9aO5RL4=",
+      "Silk.NET.OpenGLES.ulk1oavryv.wasm": "sha256-kk4kuIQZMepqy5DUGekZVqkRNt94J6UG4sk0zVjuUJg=",
+      "System.Collections.Concurrent.nscd2g3yyy.wasm": "sha256-+UudIH7qwZbrvJF2zqh6wXOhdhuoVMK2o/uMdiX5r8I=",
+      "System.Console.7fp0d49q0h.wasm": "sha256-TbKZBtIOyeC5IUWte+8vzSpD3Q7/tLnuQGvvr2g+OpE=",
+      "System.Private.Uri.qqxuia3e81.wasm": "sha256-ro9xJ2Qld7K/Omw2hGQQG32+cAx384dl0F6riZnxw3k=",
+      "realtime_path_tracing_demo.mj3yxn6y3j.wasm": "sha256-jlwXiY+MSjej2EyW+k9ow4SNxCLKh7leYKC3x9r9Zjk="
+    }
+  },
+  "cacheBootResources": true,
+  "debugLevel": 0,
+  "linkerEnabled": true,
+  "globalizationMode": "invariant"
+}
