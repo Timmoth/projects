@@ -1,5 +1,21 @@
 [
     {
+    "name": "Maurer Rose",
+    "description": "p5.js sketch rendering dynamic Maurer Rose patterns with smoothly fading transitions, color cycling, and animated petal counts.",
+    "created_at": 1757087944,
+    "modified_at": 1757087944,
+    "url": "./demos/maurer_rose/index.html",
+    "repo": "",
+    "image": "./images/maurer_rose.jpeg",
+    "tags": [
+        "p5js",
+        "javascript",
+        "math",
+        "js",
+        "processing"
+    ]
+},
+    {
         "name": "Mandelbulb",
         "description": "Interactive WebGL fractal explorer rendering a ray-marched Mandelbulb with zoom and rotation.",
         "created_at": 1756911551,
