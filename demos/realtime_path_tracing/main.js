@@ -1,4 +1,4 @@
-import {dotnet} from './framework/dotnet.js'
+import {dotnet} from './_framework/dotnet.js'
 
 const {setModuleImports, getAssemblyExports, getConfig, runMain} = await dotnet
     .withDiagnosticTracing(false)
@@ -7,7 +7,7 @@ const {setModuleImports, getAssemblyExports, getConfig, runMain} = await dotnet
 
 const config = getConfig();
 const exports = await getAssemblyExports(config.mainAssemblyName);
-const interop = exports.WebGL.Sample.Interop;
+const interop = exports.realtime_path_tracing_demo.Interop;
 
 var canvas = globalThis.document.getElementById("canvas");
 dotnet.instance.Module["canvas"] = canvas;
