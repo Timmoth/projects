@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "realtime_path_tracing_demo",
   "resources": {
-    "hash": "sha256-3H9xwyw1IazKaxQZVCGT1gKbg0M04isrOiD9kwb+jOk=",
+    "hash": "sha256-Y6b5WfsujDD0JaJ5z3+IGzRnR9Ia6M2BsUwDANT8qnQ=",
     "fingerprinting": {
       "Silk.NET.Core.jzhbblocph.wasm": "Silk.NET.Core.wasm",
       "Silk.NET.OpenGLES.llbe7x7jpc.wasm": "Silk.NET.OpenGLES.wasm",
@@ -13,7 +13,7 @@
       "System.Private.Uri.auh4guwaid.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.bto7ec0md6.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
       "System.Private.CoreLib.zjzsttlhd4.wasm": "System.Private.CoreLib.wasm",
-      "realtime_path_tracing_demo.5gr6vsqax0.wasm": "realtime_path_tracing_demo.wasm",
+      "realtime_path_tracing_demo.hfbsyxq415.wasm": "realtime_path_tracing_demo.wasm",
       "dotnet.native.tvpwk5mr9i.js": "dotnet.native.js",
       "dotnet.native.04ri29b44v.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -41,7 +41,7 @@
       "System.Net.Http.lcjvdxyunz.wasm": "sha256-tWTRku1gcNcAEkc/DCIdhl8xDL0oeWc7t8jFisbwZ+c=",
       "System.Net.Primitives.um6s3v6dex.wasm": "sha256-apBfvYh1Ms3zCUF7mLUnYtXgFCFIagkC04eopFCYvSc=",
       "System.Private.Uri.auh4guwaid.wasm": "sha256-UvuiBJw7lH8p2+L2y2jHbqsPBCHX1fE9muPYKE4OdJ4=",
-      "realtime_path_tracing_demo.5gr6vsqax0.wasm": "sha256-i6Cvvy4AC/DSejMT5DYf26sGK5+yAsuvRhGJbfir2UQ="
+      "realtime_path_tracing_demo.hfbsyxq415.wasm": "sha256-3U5wVk3Yvtp2PFicNIOhyqfl5o9uPBnfq+IFB89qmmg="
     }
   },
   "cacheBootResources": true,
