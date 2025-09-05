@@ -1,36 +1,53 @@
 [
-        {
-    "name": "3d shapes",
-    "description": "p5.js sketch rendering various rotating 3d wireframe shapes.",
-    "created_at": 1757087944,
-    "modified_at": 1757087944,
-    "url": "./demos/3d_shapes/index.html",
-    "repo": "",
-    "image": "./images/3d_shapes.jpeg",
-    "tags": [
-        "p5js",
-        "javascript",
-        "math",
-        "js",
-        "processing"
-    ]
-},
     {
-    "name": "Maurer Rose",
-    "description": "p5.js sketch rendering dynamic Maurer Rose patterns with smoothly fading transitions, color cycling, and animated petal counts.",
-    "created_at": 1757087944,
-    "modified_at": 1757087944,
-    "url": "./demos/maurer_rose/index.html",
-    "repo": "",
-    "image": "./images/maurer_rose.jpeg",
-    "tags": [
-        "p5js",
-        "javascript",
-        "math",
-        "js",
-        "processing"
-    ]
-},
+        "name": "Double Pendulum",
+        "description": "p5.js sketch simulating a chaotic double pendulum with a fading trail.",
+        "created_at": 1757116800,
+        "modified_at": 1757116800,
+        "url": "./demos/double_pendulum/index.html",
+        "repo": "",
+        "image": "./images/double_pendulum.jpeg",
+        "tags": [
+            "p5js",
+            "javascript",
+            "physics",
+            "chaos",
+            "visualization",
+            "math"
+        ]
+    },
+    {
+        "name": "3d Shapes",
+        "description": "p5.js sketch rendering various rotating 3d wireframe shapes.",
+        "created_at": 1757087944,
+        "modified_at": 1757087944,
+        "url": "./demos/3d_shapes/index.html",
+        "repo": "",
+        "image": "./images/3d_shapes.jpeg",
+        "tags": [
+            "p5js",
+            "javascript",
+            "math",
+            "js",
+            "processing"
+        ]
+    },
+    {
+        "name": "Maurer Rose",
+        "description": "p5.js sketch rendering dynamic Maurer Rose patterns with smoothly fading transitions, color cycling, and animated petal counts.",
+        "created_at": 1757087944,
+        "modified_at": 1757087944,
+        "url": "./demos/maurer_rose/index.html",
+        "repo": "",
+        "image": "./images/maurer_rose.jpeg",
+        "tags": [
+            "p5js",
+            "javascript",
+            "math",
+            "js",
+            "processing"
+        ]
+    },
     {
         "name": "Mandelbulb",
         "description": "Interactive WebGL fractal explorer rendering a ray-marched Mandelbulb with zoom and rotation.",
