@@ -1,0 +1,13 @@
+{
+  "name": "maurer_rose",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild ./main.js --bundle --minify --outfile=dist/main.js && cp ./index.html dist/index.html"
+  },
+  "dependencies": {
+    "p5": "^1.7.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.18"
+  }
+}

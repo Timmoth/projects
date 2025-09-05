@@ -1,4 +1,20 @@
 [
+        {
+    "name": "3d shapes",
+    "description": "p5.js sketch rendering various rotating 3d wireframe shapes.",
+    "created_at": 1757087944,
+    "modified_at": 1757087944,
+    "url": "./demos/3d_shapes/index.html",
+    "repo": "",
+    "image": "./images/3d_shapes.jpeg",
+    "tags": [
+        "p5js",
+        "javascript",
+        "math",
+        "js",
+        "processing"
+    ]
+},
     {
     "name": "Maurer Rose",
     "description": "p5.js sketch rendering dynamic Maurer Rose patterns with smoothly fading transitions, color cycling, and animated petal counts.",

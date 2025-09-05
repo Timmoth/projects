@@ -7,6 +7,8 @@ PROJECTS=(
     "./src/mandelbrot"
     "./src/mandelbulb"
     "./src/reflective_spheres"
+    "./src/maurer_rose"
+    "./src/3d_shapes"
 )
 
 # Save current directory (root)
