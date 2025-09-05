@@ -42,22 +42,31 @@
       renderProjects(sortProjects(allProjects, 'modified_at'));
     }
 
-    function renderProjects(projects) {
-      const container = document.getElementById('projects');
-      container.innerHTML = '';
-      projects.forEach(p => {
-        const li = document.createElement('li');
-        li.className = "border border-[#0ff] rounded p-3 hover:bg-[#111] transition";
-        li.innerHTML = `
-          <a href="${p.url}" class="block">
-            <div class="text-sm text-[#88bbbb]">[${formatDate(p.created_at)}]</div>
-            <div class="font-bold">${p.name}</div>
-            <div class="text-xs text-[#88bbbb] mt-1">${p.description || ''}</div>
-          </a>
-        `;
-        container.appendChild(li);
-      });
-    }
+function renderProjects(projects) {
+  const container = document.getElementById('projects');
+  container.innerHTML = '';
+
+  projects.forEach(p => {
+    const li = document.createElement('li');
+    li.className = "border border-[#0ff] rounded p-3 hover:bg-[#111] transition flex items-center gap-3";
+
+    li.innerHTML = `
+      <a href="${p.url}" class="flex items-center gap-3">
+        <div class="flex-shrink-0 w-16 h-16 overflow-hidden rounded">
+          <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
+        </div>
+        <div class="flex-1">
+          <div class="text-sm text-[#88bbbb]">[${formatDate(p.created_at)}]</div>
+          <div class="font-bold">${p.name}</div>
+          <div class="text-xs text-[#88bbbb] mt-1">${p.description || ''}</div>
+        </div>
+      </a>
+    `;
+
+    container.appendChild(li);
+  });
+}
+
 
     function formatDate(unix_seconds) {
       const options = { month: 'short', year: 'numeric' };

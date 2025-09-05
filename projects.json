@@ -1,11 +1,12 @@
 [
     {
-        "name": "mandel bulb",
+        "name": "Mandelbulb",
         "description": "Interactive WebGL fractal explorer rendering a ray-marched Mandelbulb with zoom and rotation.",
         "created_at": 1756911551,
         "modified_at": 1756911551,
-        "url": "./demos/ray_marching_mandelbulb/index.html",
+        "url": "./demos/mandelbulb/index.html",
         "repo": "",
+        "image": "./images/mandelbulb.jpeg",
         "tags": [
             "graphics",
             "raymarching",
@@ -18,12 +19,13 @@
         ]
     },
     {
-        "name": "infinite cubes ray marching",
+        "name": "Infinite Cubes",
         "description": "Real-time WebGL / Wasm demo showcasing an infinite lattice of ray-marched cubes inspired by interstellar visuals.",
         "created_at": 1756842804,
         "modified_at": 1756842804,
-        "url": "./demos/ray_marching_infinite_cubes/index.html",
+        "url": "./demos/infinite_cubes/index.html",
         "repo": "",
+        "image": "./images/infinite_cubes.jpeg",
         "tags": [
             "graphics",
             "raymarching",
@@ -36,11 +38,12 @@
         ]
     },
     {
-        "name": "realtime path tracing",
+        "name": "Reflective Spheres",
         "description": "Real-time WebGl / Wasm path tracer demo showcasing reflective spheres, physics collisions, and dynamic shadows.",
         "created_at": 1756400239,
         "modified_at": 1756400239,
-        "url": "./demos/realtime_path_tracing/index.html",
+        "url": "./demos/reflective_spheres/index.html",
+        "image": "./images/reflective_spheres.jpeg",
         "repo": "",
         "tags": [
             "graphics",
@@ -52,12 +55,13 @@
         ]
     },
     {
-        "name": "chip-8 emulator",
+        "name": "Chip-8 Emulator",
         "description": "Wasm CHIP-8 emulator with 4K memory, 16 registers, timers, and 64×32 display running in-browser.",
         "created_at": 1755964812,
         "modified_at": 1756224012,
         "url": "https://emuchip.com",
         "repo": "https://github.com/Timmoth/EmuChip",
+        "image": "./images/chip8_emulator.jpeg",
         "tags": [
             "emulator",
             "assembly",
@@ -67,11 +71,12 @@
         ]
     },
     {
-        "name": "mandelbrot viewer",
+        "name": "Mandelbrot",
         "description": "Interactive Mandelbrot fractal renderer using WebAssembly and WebGL, featuring dynamic animated coloring and smooth zooming.",
         "created_at": 1756455399,
         "modified_at": 1756455399,
-        "url": "./demos/mandelbrot_viewer/index.html",
+        "url": "./demos/mandelbrot/index.html",
+        "image": "./images/mandelbrot.jpeg",
         "repo": "",
         "tags": [
             "graphics",
