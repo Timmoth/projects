@@ -1,4 +1,21 @@
 [
+        {
+        "name": "Curved Lines",
+        "description": "Interactive WebGL fragment shader animating sin / cosine waves.",
+        "created_at": 1757153886,
+        "modified_at": 1757153886,
+        "url": "./demos/curved_lines/index.html",
+        "repo": "",
+        "image": "./images/curved_lines.jpeg",
+        "tags": [
+            "webgl",
+            "javascript",
+            "shader",
+            "visualization",
+            "math",
+            "interactive"
+        ]
+    },
     {
         "name": "Particle Rose",
         "description": "Interactive WebGL fragment shader animating rose curves.",
