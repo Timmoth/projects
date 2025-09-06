@@ -35,7 +35,7 @@ async function main() {
     const uMouse = gl.getUniformLocation(program, "u_mouse");
 
     const quadVerts = new Float32Array([
-        -1, -1,  1, -1, -1, 1,
+        -1, -1, 1, -1, -1, 1,
         -1, 1, 1, -1, 1, 1
     ]);
 
@@ -43,25 +43,33 @@ async function main() {
     gl.bindBuffer(gl.ARRAY_BUFFER, quadBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, quadVerts, gl.STATIC_DRAW);
 
-let mouseX = 0.0, mouseY = 0.0;
+    let mouseX = 0;
+    let mouseY = 0;
 
-function updateMouse(clientX, clientY) {
-    // Normalize to full window width / height
-    mouseX = Math.min(Math.max(clientX / window.innerWidth, 0), 1);
-    mouseY = Math.min(Math.max(clientY / window.innerHeight, 0), 1);
-}
-
-// Mouse move
-window.addEventListener("mousemove", e => updateMouse(e.clientX, e.clientY));
-
-// Touch move
-window.addEventListener("touchmove", e => {
-    e.preventDefault(); // prevent scrolling
-    if (e.touches.length > 0) {
-        const t = e.touches[0];
-        updateMouse(t.clientX, t.clientY);
+    function updateMouse(x, y) {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        mouseX = Math.min(Math.max(x / width, 0), 1);
+        mouseY = Math.min(Math.max(y / height, 0), 1);
     }
-}, { passive: false });
+
+    // Desktop
+    document.addEventListener("mousemove", e => updateMouse(e.clientX, e.clientY));
+
+    // Mobile
+    document.addEventListener("touchstart", e => {
+        if (e.touches.length > 0) {
+            updateMouse(e.touches[0].clientX, e.touches[0].clientY);
+        }
+    }, { passive: false });
+
+    document.addEventListener("touchmove", e => {
+        e.preventDefault(); // stop scrolling
+        if (e.touches.length > 0) {
+            updateMouse(e.touches[0].clientX, e.touches[0].clientY);
+        }
+    }, { passive: false });
+
 
 
     let time = 0;
