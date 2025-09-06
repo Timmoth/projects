@@ -1,29 +1,21 @@
 [
         {
-        "name": "Curved Lines",
-        "description": "Interactive WebGL fragment shader animating sin / cosine waves.",
+        "name": "DsaDotnet",
+        "description": "A dotnet class library containing a collection of algorithms and datastructures.",
         "created_at": 1757153886,
         "modified_at": 1757153886,
-        "url": "./demos/curved_lines/index.html",
-        "repo": "",
-        "image": "./images/curved_lines.jpeg",
+        "url": "https://github.com/Timmoth/DsaDotnet",
         "tags": [
-            "webgl",
-            "javascript",
-            "shader",
-            "visualization",
-            "math",
-            "interactive"
+            "dotnet",
+            "library"
         ]
     },
     {
-        "name": "Particle Rose",
-        "description": "Interactive WebGL fragment shader animating rose curves.",
-        "created_at": 1757151196,
-        "modified_at": 1757151196,
-        "url": "./demos/particle_rose/index.html",
-        "repo": "",
-        "image": "./images/particle_rose.jpeg",
+        "name": "Code Art",
+        "description": "Various interactive projects blending code and art.",
+        "created_at": 1757153886,
+        "modified_at": 1757153886,
+        "url": "https://art.timmoth.com",
         "tags": [
             "webgl",
             "javascript",
@@ -31,112 +23,140 @@
             "visualization",
             "math",
             "interactive",
-            "particles",
-            "rose curve"
+            "dotnet"
         ]
     },
     {
-        "name": "Double Pendulum",
-        "description": "p5.js sketch simulating a chaotic double pendulum with a fading trail.",
-        "created_at": 1757116800,
-        "modified_at": 1757116800,
-        "url": "./demos/double_pendulum/index.html",
-        "repo": "",
-        "image": "./images/double_pendulum.jpeg",
+        "name": "calendarpod",
+        "description": "Intuitive collaborative scheduling and resource management.",
+        "created_at": 1739110332,
+        "modified_at": 1739110332,
+        "url": "https://calendarpod.com",
         "tags": [
-            "p5js",
-            "javascript",
-            "physics",
-            "chaos",
-            "visualization",
-            "math"
+            "blazor",
+            "dotnet",
+            "signalr"
         ]
     },
-    {
-        "name": "3d Shapes",
-        "description": "p5.js sketch rendering various rotating 3d wireframe shapes.",
-        "created_at": 1757087944,
-        "modified_at": 1757087944,
-        "url": "./demos/3d_shapes/index.html",
-        "repo": "",
-        "image": "./images/3d_shapes.jpeg",
+                        {
+        "name": "Romp Island",
+        "description": "65% art project 35% MMORPG.",
+        "created_at": 1696857132,
+        "modified_at": 1696857132,
+        "url": "https://rompisland.com",
         "tags": [
-            "p5js",
-            "javascript",
-            "math",
+            "ts",
+            "threejs",
+            "dotnet",
+            "signalr"
+        ]
+    },
+                    {
+        "name": "Tiny Tool Crate",
+        "description": "A collection of tiny developer productivity tools.",
+        "created_at": 1736431932,
+        "modified_at": 1736431932,
+        "url": "https://tinytoolcrate.com",
+        "tags": [
+            "ts",
+            "react"
+        ]
+    },
+                {
+        "name": "cloud rec room",
+        "description": "A collection of multiplayer ice-breaker party games.",
+        "created_at": 1694265132,
+        "modified_at": 1694265132,
+        "url": "https://cloudrecroom.com",
+        "tags": [
+            "dotnet",
+            "signalr",
+            "react"
+        ]
+    },
+            {
+        "name": "techfolk",
+        "description": "Discover authoritative and influential individuals in the tech community.",
+        "created_at": 1694265132,
+        "modified_at": 1694265132,
+        "url": "https://techfolk.dev",
+        "tags": [
             "js",
-            "processing"
+            "ts",
+            "react"
+        ]
+    },
+        {
+        "name": "RustyRatracerr",
+        "description": "Experiments into HPC ray tracing using Rust.",
+        "created_at": 1688649132,
+        "modified_at": 1688649132,
+        "url": "https://github.com/Timmoth/RustyRatracerr",
+        "tags": [
+            "rust",
+            "ray tracing",
+            "hpc"
         ]
     },
     {
-        "name": "Maurer Rose",
-        "description": "p5.js sketch rendering dynamic Maurer Rose patterns with smoothly fading transitions, color cycling, and animated petal counts.",
-        "created_at": 1757087944,
-        "modified_at": 1757087944,
-        "url": "./demos/maurer_rose/index.html",
-        "repo": "",
-        "image": "./images/maurer_rose.jpeg",
+        "name": "AsyncMonolith",
+        "description": "Facilitates simple, durable and asynchronous messaging in dotnet apps.",
+        "created_at": 1751807532,
+        "modified_at": 1751807532,
+        "url": "https://github.com/Timmoth/AsyncMonolith",
         "tags": [
-            "p5js",
-            "javascript",
-            "math",
-            "js",
-            "processing"
-        ]
-    },
-    {
-        "name": "Mandelbulb",
-        "description": "Interactive WebGL fractal explorer rendering a ray-marched Mandelbulb with zoom and rotation.",
-        "created_at": 1756911551,
-        "modified_at": 1756911551,
-        "url": "./demos/mandelbulb/index.html",
-        "repo": "",
-        "image": "./images/mandelbulb.jpeg",
-        "tags": [
-            "graphics",
-            "raymarching",
-            "webgl",
-            "opengl",
-            "shaders",
-            "wasm",
             "dotnet",
-            "fractal"
+            "library",
+            "nuget"
         ]
     },
     {
-        "name": "Infinite Cubes",
-        "description": "Real-time WebGL / Wasm demo showcasing an infinite lattice of ray-marched cubes inspired by interstellar visuals.",
-        "created_at": 1756842804,
-        "modified_at": 1756842804,
-        "url": "./demos/infinite_cubes/index.html",
-        "repo": "",
-        "image": "./images/infinite_cubes.jpeg",
+        "name": "Sapling",
+        "description": "One of the worlds strongest chess engines (rated 3400 elo).",
+        "created_at": 1743944863,
+        "modified_at": 1743944863,
+        "url": "https://github.com/Timmoth/Sapling",
         "tags": [
-            "graphics",
-            "raymarching",
-            "webgl",
-            "opengl",
-            "shaders",
-            "wasm",
             "dotnet",
-            "fractal"
+            "chess"
         ]
     },
     {
-        "name": "Reflective Spheres",
-        "description": "Real-time WebGl / Wasm path tracer demo showcasing reflective spheres, physics collisions, and dynamic shadows.",
-        "created_at": 1756400239,
-        "modified_at": 1756400239,
-        "url": "./demos/reflective_spheres/index.html",
-        "image": "./images/reflective_spheres.jpeg",
-        "repo": "",
+        "name": "aid-cli",
+        "description": "A rust CLI toolkit featuring a variety of helpful utilities.",
+        "created_at": 1730902063,
+        "modified_at": 1730902063,
+        "url": "https://github.com/Timmoth/aid-cli",
         "tags": [
-            "graphics",
-            "webgl",
-            "opengl",
-            "C#",
+            "rust",
+            "tooling",
+            "cli"
+        ]
+    },
+    {
+        "name": "vcortex",
+        "description": "A Lightweight & high performance CPU/GPU machine learning library for .NET, designed for neural network training and inference.",
+        "created_at": 1730902063,
+        "modified_at": 1730902063,
+        "url": "https://github.com/Timmoth/vcortex",
+        "tags": [
+            "gpu",
             "dotnet",
-            "wasm"
+            "ai",
+            "ml"
+        ]
+    },
+    {
+        "name": "The Grand Chess Tree",
+        "description": "a public distributed effort to traverse the depths of the game of chess.",
+        "created_at": 1741269978,
+        "modified_at": 1741269978,
+        "url": "https://grandchesstree.com",
+        "tags": [
+            "chess",
+            "dotnet",
+            "distributed",
+            "hpc"
         ]
     },
     {
@@ -145,32 +165,12 @@
         "created_at": 1755964812,
         "modified_at": 1756224012,
         "url": "https://emuchip.com",
-        "repo": "https://github.com/Timmoth/EmuChip",
-        "image": "./images/chip8_emulator.jpeg",
         "tags": [
             "emulator",
             "assembly",
             "C#",
             "dotnet",
             "wasm"
-        ]
-    },
-    {
-        "name": "Mandelbrot",
-        "description": "Interactive Mandelbrot fractal renderer using WebAssembly and WebGL, featuring dynamic animated coloring and smooth zooming.",
-        "created_at": 1756455399,
-        "modified_at": 1756455399,
-        "url": "./demos/mandelbrot/index.html",
-        "image": "./images/mandelbrot.jpeg",
-        "repo": "",
-        "tags": [
-            "graphics",
-            "webgl",
-            "opengl",
-            "C#",
-            "dotnet",
-            "wasm",
-            "fractal"
         ]
     }
 ]

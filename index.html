@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#0d0d0d] text-[#c0ffee]">
+<html lang="en" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000000;
+      font-family: monospace;
+    }
+  </style>
 </head>
-<body class="p-6 flex flex-col items-center font-mono">
+<body class="p-6 flex flex-col items-center font-mono min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-200">
 
-  <h1 class="text-xl mb-4 text-center drop-shadow-[0_0_6px_#c0ffee]">Demos</h1>
+  <h1 class="text-xl mb-6 text-center font-bold tracking-wide text-emerald-400 drop-shadow-[0_0_6px_rgba(52,211,153,0.5)]">
+    Coding Projects
+  </h1>
 
   <!-- Controls -->
-  <div class="flex flex-col sm:flex-row gap-3 mb-6 w-full max-w-xl justify-between">
+  <div class="flex flex-col sm:flex-row gap-3 mb-6 w-full max-w-3xl justify-between">
     <input 
       id="filter"
       type="text" 
       placeholder="Filter projects..."
-      class="bg-[#1a1a1a] border border-[#c0ffee] text-[#c0ffee] px-2 py-1 rounded w-full sm:w-1/2 placeholder-[#88bbbb] focus:outline-none focus:border-[#0ff]"
+      class="bg-gray-800 border border-gray-700 text-gray-200 px-2 py-1 rounded w-full sm:w-1/2 placeholder-gray-500 focus:outline-none focus:border-emerald-400"
     >
-    <label class="flex items-center gap-2 text-sm">
+    <label class="flex items-center gap-2 text-sm text-gray-400">
       Sort by:
       <select 
         id="sort" 
-        class="bg-[#1a1a1a] border border-[#c0ffee] text-[#c0ffee] px-2 py-1 rounded focus:outline-none focus:border-[#0ff]"
+        class="bg-gray-800 border border-gray-700 text-gray-200 px-2 py-1 rounded focus:outline-none focus:border-emerald-400"
       >
         <option value="modified_at">Last Modified</option>
         <option value="name">Name</option>
@@ -30,14 +41,8 @@
     </label>
   </div>
 
-  <!-- Projects -->
-<ul id="projects" class="w-full 
-    max-w-7xl
-    grid 
-    grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-    gap-4 
-    justify-center">
-</ul>
+  <!-- Project List -->
+  <ul id="projects" class="w-full max-w-3xl flex flex-col divide-y divide-gray-800 overflow-y-auto p-12"></ul>
 
   <script>
     let allProjects = [];
@@ -48,31 +53,27 @@
       renderProjects(sortProjects(allProjects, 'modified_at'));
     }
 
-function renderProjects(projects) {
-  const container = document.getElementById('projects');
-  container.innerHTML = '';
+    function renderProjects(projects) {
+      const container = document.getElementById('projects');
+      container.innerHTML = '';
 
-  projects.forEach(p => {
-    const li = document.createElement('li');
-    li.className = "border border-[#0ff] rounded p-3 hover:bg-[#111] transition flex items-center gap-3";
+      projects.forEach(p => {
+        const li = document.createElement('li');
+        li.className = "py-4 hover:bg-gray-800/50 transition px-2";
 
-    li.innerHTML = `
-      <a href="${p.url}" class="flex items-center gap-3">
-        <div class="flex-shrink-0 w-24 h-24 overflow-hidden rounded">
-          <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
-        </div>
-        <div class="flex-1">
-          <div class="text-sm text-[#88bbbb]">[${formatDate(p.created_at)}]</div>
-          <div class="font-bold">${p.name}</div>
-          <div class="text-xs text-[#88bbbb] mt-1">${p.description || ''}</div>
-        </div>
-      </a>
-    `;
+        li.innerHTML = `
+          <a href="${p.url}" class="block">
+            <div class="flex justify-between items-baseline mb-1">
+              <span class="font-semibold text-gray-100">${p.name}</span>
+              <span class="text-xs text-gray-500">[${formatDate(p.created_at)}]</span>
+            </div>
+            <div class="text-sm text-gray-400">${p.description || ''}</div>
+          </a>
+        `;
 
-    container.appendChild(li);
-  });
-}
-
+        container.appendChild(li);
+      });
+    }
 
     function formatDate(unix_seconds) {
       const options = { month: 'short', year: 'numeric' };
@@ -115,15 +116,13 @@ function renderProjects(projects) {
     loadProjects();
   </script>
 
-  <div class="mt-8 text-center text-sm text-[#88bbbb]">
-
-    Source code for projects     <a href="https://github.com/timmoth" target="_blank" class="text-[#0ff] hover:underline">
-      found on GitHub
-    </a> made by 
-    <a href="https://www.linkedin.com/in/timmoth/" target="_blank" class="text-[#0ff] hover:underline">
-      Tim Jones
-    </a>
-  </div>
+  <!-- Sticky footer -->
+<footer class="fixed bottom-0 left-0 w-full text-center text-sm text-gray-500 bg-gray-950/80 backdrop-blur-sm py-3">
+    Source code for projects 
+    <a href="https://github.com/timmoth" target="_blank" class="text-emerald-400 hover:underline">found on GitHub</a> · 
+    Built by 
+    <a href="https://www.linkedin.com/in/timmoth/" target="_blank" class="text-emerald-400 hover:underline">Tim Jones</a>
+  </footer>
 
 </body>
 </html>
