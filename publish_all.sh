@@ -9,6 +9,9 @@ PROJECTS=(
     "./src/reflective_spheres"
     "./src/maurer_rose"
     "./src/3d_shapes"
+    "./src/double_pendulum"
+    "./src/particle_rose"
+
 )
 
 # Save current directory (root)

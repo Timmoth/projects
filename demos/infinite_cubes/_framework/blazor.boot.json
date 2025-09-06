@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "infinite_cubes",
   "resources": {
-    "hash": "sha256-Ovuw7TXw74dNo1y+awALms7VdrwD91of9Om05PMmuVI=",
+    "hash": "sha256-7LvNUlbfuI6VIjZD1Y7G73c3vS/dkhtS3l272PD6iJc=",
     "fingerprinting": {
       "Silk.NET.Core.jzhbblocph.wasm": "Silk.NET.Core.wasm",
       "Silk.NET.OpenGLES.ulk1oavryv.wasm": "Silk.NET.OpenGLES.wasm",
@@ -13,7 +13,7 @@
       "System.Private.Uri.auh4guwaid.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.bto7ec0md6.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
       "System.Private.CoreLib.xxkw5t5yof.wasm": "System.Private.CoreLib.wasm",
-      "infinite_cubes.pi60v9h6to.wasm": "infinite_cubes.wasm",
+      "infinite_cubes.ikxiust5by.wasm": "infinite_cubes.wasm",
       "dotnet.native.tvpwk5mr9i.js": "dotnet.native.js",
       "dotnet.native.39ksvo0kbn.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -41,7 +41,7 @@
       "System.Net.Http.lcjvdxyunz.wasm": "sha256-tWTRku1gcNcAEkc/DCIdhl8xDL0oeWc7t8jFisbwZ+c=",
       "System.Net.Primitives.um6s3v6dex.wasm": "sha256-apBfvYh1Ms3zCUF7mLUnYtXgFCFIagkC04eopFCYvSc=",
       "System.Private.Uri.auh4guwaid.wasm": "sha256-UvuiBJw7lH8p2+L2y2jHbqsPBCHX1fE9muPYKE4OdJ4=",
-      "infinite_cubes.pi60v9h6to.wasm": "sha256-AfTMQUV0Ev8orE49i8agk3eBY+7INr+nlMJ+Bi4SYcs="
+      "infinite_cubes.ikxiust5by.wasm": "sha256-cliXlfbeADlEzc8UcJ1rE9CiJDKdtyweuKrelDbi/nw="
     }
   },
   "cacheBootResources": true,

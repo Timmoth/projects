@@ -1,5 +1,24 @@
 [
     {
+        "name": "Particle Rose",
+        "description": "Interactive WebGL fragment shader animating rose curves.",
+        "created_at": 1757151196,
+        "modified_at": 1757151196,
+        "url": "./demos/particle_rose/index.html",
+        "repo": "",
+        "image": "./images/particle_rose.jpeg",
+        "tags": [
+            "webgl",
+            "javascript",
+            "shader",
+            "visualization",
+            "math",
+            "interactive",
+            "particles",
+            "rose curve"
+        ]
+    },
+    {
         "name": "Double Pendulum",
         "description": "p5.js sketch simulating a chaotic double pendulum with a fading trail.",
         "created_at": 1757116800,

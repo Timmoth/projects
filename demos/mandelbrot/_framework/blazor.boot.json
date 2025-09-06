@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "mandelbrot_viewer",
   "resources": {
-    "hash": "sha256-+VETLNj7VZrfB065PPKdyEHoPdXYXhPp+0CaasaR3ns=",
+    "hash": "sha256-1qKZRIqacuBwRe+X8NJS1yur+vAKliCKg/BbikMCIG0=",
     "fingerprinting": {
       "Silk.NET.Core.jzhbblocph.wasm": "Silk.NET.Core.wasm",
       "Silk.NET.OpenGLES.u3hxdzfj9g.wasm": "Silk.NET.OpenGLES.wasm",
@@ -13,7 +13,7 @@
       "System.Private.Uri.auh4guwaid.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.bto7ec0md6.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
       "System.Private.CoreLib.w7jyl8mw77.wasm": "System.Private.CoreLib.wasm",
-      "mandelbrot_viewer.pae6ewqc40.wasm": "mandelbrot_viewer.wasm",
+      "mandelbrot_viewer.ayerwjelyj.wasm": "mandelbrot_viewer.wasm",
       "dotnet.native.tvpwk5mr9i.js": "dotnet.native.js",
       "dotnet.native.apk91zq7lz.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -41,7 +41,7 @@
       "System.Net.Http.lcjvdxyunz.wasm": "sha256-tWTRku1gcNcAEkc/DCIdhl8xDL0oeWc7t8jFisbwZ+c=",
       "System.Net.Primitives.um6s3v6dex.wasm": "sha256-apBfvYh1Ms3zCUF7mLUnYtXgFCFIagkC04eopFCYvSc=",
       "System.Private.Uri.auh4guwaid.wasm": "sha256-UvuiBJw7lH8p2+L2y2jHbqsPBCHX1fE9muPYKE4OdJ4=",
-      "mandelbrot_viewer.pae6ewqc40.wasm": "sha256-4Xu26LmOlRgyBFIJaT7cZn4RxfzXB33+geqvBfq/tIY="
+      "mandelbrot_viewer.ayerwjelyj.wasm": "sha256-jg8S0E4/JTDJPZyym4eW4TNNLKWtv+CzoHI5PBAMsVk="
     }
   },
   "cacheBootResources": true,
